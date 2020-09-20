@@ -1315,6 +1315,7 @@
 }
 .smoke {
     z-index: 2;
+    opacity: 0.9;
     filter: brightness(95%);
     width: 600px;
     height: 600px;
