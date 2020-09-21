@@ -1421,10 +1421,12 @@ body {
   overflow-x: hidden;
 }
 ::-moz-selection {
+  text-shadow: 0px;
   color: black;
   background: #ccffffbb;
 }
 ::selection {
+  text-shadow: 0px;
   color: black;
   background: #ccffffbb;
 }
