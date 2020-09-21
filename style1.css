@@ -1405,8 +1405,6 @@ h1 {
   border-radius: 10px;
   margin: auto;
   max-width: 240px;
-  box-shadow: 0px 0px 8px #E1EDBFcc;
-  background-color:#4B4F40aa;
   text-shadow: 0px 0px 55px #E1EDBF;
   font-size: 3.4em;
   font-family:monospace;
@@ -1421,4 +1419,12 @@ body {
   background-size: cover;
   margin: 0;
   overflow-x: hidden;
+}
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+::selection {
+  color: red;
+  background: yellow;
 }
