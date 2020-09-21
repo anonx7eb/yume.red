@@ -1401,8 +1401,12 @@ a:active {
   top: 3px;
 }
 h1 {
-  padding: 0px;
-  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 240px;
+  box-shadow: 0px 0px 8px #E1EDBFcc;
+  background-color:#4B4F40aa;
   text-shadow: 0px 0px 55px #E1EDBF;
   font-size: 3.4em;
   font-family:monospace;
