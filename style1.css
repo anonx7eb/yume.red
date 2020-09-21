@@ -1315,6 +1315,12 @@
 }
 .smoke {
     z-index: 2;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     opacity: 0.9;
     filter: brightness(95%);
     width: 600px;
