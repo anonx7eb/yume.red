@@ -1420,11 +1420,11 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-::-moz-selection { /* Code for Firefox */
-  color: red;
-  background: yellow;
+::-moz-selection {
+  color: black;
+  background: #ccffffbb;
 }
 ::selection {
-  color: red;
-  background: yellow;
+  color: black;
+  background: #ccffffbb;
 }
