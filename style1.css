@@ -1336,17 +1336,20 @@
 }
 p {
   padding-right: 30px;
+  color: #E1EDBF;
   padding-left: 30px;
   padding-top: 10px;
 }
 small {
   font-size: 10px;
   padding: 30px;
+  color: #E1EDBF;
 }
 h2 {
   font-family:monospace;
   margin: 0px;
-  color: #FFFFFF;
+  color: #E1EDBF;
+  text-shadow: 0px 0px 5px #E1EDBFcc;
   padding-top: 25px;
   padding-bottom: 15px;
   font-weight: bold;
@@ -1359,8 +1362,8 @@ h2 {
   max-width: 700px;
   clear: right;
   overflow: hidden;
-  box-shadow: 0px 0px 16px #111111;
-  background-color:#111111cc;
+  box-shadow: 0px 0px 8px #E1EDBFcc;
+  background-color:#4B4F40aa;
   padding: 0px;
   /*border-left: 6px solid #cc0000;*/
   /*border-radius: 0 10px 30px 0;*/
@@ -1371,34 +1374,43 @@ h2 {
 }
 hr {
   display: block;
-  border-color: #FFFFFF;
+  border-color: #E1EDBFdd;
   margin-right: auto;
   border-bottom-width:4px;
 }
 a {
-  color: white;
-
+  background-color: #E1EDBFcc;
+  box-shadow: 0 3px 0 #798067cc;
+  font-size:1.4em;
+  font-weight: normal;
+  font-family: monospace;
+  color: black;
+  padding: 5px 24px;
   position: relative;
   text-decoration: none;
   border-radius: 2.5px;
   margin-right: 20px;
 }
-a:link {
-  color: yellow;
+a:hover {
+  background-color: #ccffffbb;
+  box-shadow: 0 3px 0 #99ccccbb;
+  color: black;
 }
-a:visited {
-  color: yellow;
+a:active {
+  box-shadow: none;
+  top: 3px;
 }
 h1 {
   padding: 0px;
   margin: 0px;
+  text-shadow: 0px 0px 55px #E1EDBF;
   font-size: 3.4em;
   font-family:monospace;
-  color:#ffffff;
+  color:#E1EDBF;
   text-align:center;
 }
 body {
-  background-color: #111111;
+  background-color: #E1EDBF;
   background-image: url('mononoke.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
