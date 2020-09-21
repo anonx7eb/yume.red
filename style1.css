@@ -1321,6 +1321,7 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    pointer-events: none;
     opacity: 0.9;
     filter: brightness(95%);
     width: 600px;
