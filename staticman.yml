@@ -61,11 +61,12 @@ comments:
     #
     # Mailgun domain (encrypted)
     #domain: "4r3e2w1q"
+  pullRequestBody: "New Comment Needs Approval!"
 
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "comments/{options.slug}"
+  path: "comments/{@timestamp}"
 
   # Names of required fields. If any of these isn't in the request or is empty,
   # an error will be thrown.
