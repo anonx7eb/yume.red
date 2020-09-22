@@ -1,2 +1,8 @@
 staticman_url: https://yume-red.herokuapp.com/v2/entry/harkdand/yume.red/master/comments
-comments: true
+defaults:
+  # Post defaults
+  - scope:
+      path: "comments"
+      type: posts
+    values:
+      comments: true
