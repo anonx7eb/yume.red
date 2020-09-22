@@ -13,18 +13,43 @@
 <p>Stay tuned<br></p>
 <small>Sep 20, 2020</small><br><br>
 </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+   
+<section class="comments" id="comment-section">
+  <hr>
+  {% if site.data.comments[page.slug] %}
+  <!-- Existing comments -->
+  <div class="comments__existing">
+    <h2>Comments</h2>
+    {% assign comments = site.data.comments[page.slug] | where_exp: "item", "item.replying_to_uid == ''" %}
+    {% assign comments_by_date = comments | sort: 'date' | reverse %}
+    <!-- List main comments in reverse date order, newest first. List replies in date order, oldest first. -->
+    {% for comment in comments_by_date %}
+    {%- assign email           = comment.email %}
+    {%- assign name            = comment.name %}
+    {%- assign url             = comment.url %}
+    {%- assign date            = comment.date %}
+    {%- assign message         = comment.message %}
+    {%- assign uid             = comment._id %}
+    {% include comment.html is_reply=false uid=uid replying_to=0 email=email name=name url=url date=date message=message uid=uid %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
-      ga('create', 'UA-54012006-5', 'auto');
-      ga('send', 'pageview');
+  <!-- New comment form -->
+  <div id="respond" class="comment__new">
+    {% include comment_form.html %}
+  </div>
+</section>
 
-    </script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="{{ '/assets/main.js' | relative_url }}"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+    
+    
+    
+    
+    
 <form method="POST" action="https://yume-red.herokuapp.com/v2/entry/harkdand/yume.red/master/comments">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[redirect]" type="hidden" value="https://yume.red/test-index.html">
