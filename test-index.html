@@ -8,42 +8,19 @@
     <audio autoplay id="playAudio"><source src="https://cdn.discordapp.com/attachments/495409940211564555/757327636887240835/atatakanabuhin.mp3"></audio>
 </div>
 
-<div align="center">
-  <a href="https://www.instagram.com/ichikoaoba/">insta</a>
-  <a href="https://hermine.jp/">hermine</a>
-  <a href="https://andpremium.jp/?s=choe">choe</a>
-</div>
-
 <br><br><br><br><div class="entry">
 <h2>青葉市子 Fan Site WIP</h2><hr>
 <p>Stay tuned<br></p>
 <small>Sep 20, 2020</small><br><br>
 </div>
 
-    
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <script>
-      {% if page.comments == true %}
-      {% include comments.html %}
-      {% endif %}
-
-    </script>
-</body>
-
-
-<!-- Entry Template --
-
-
-{% if page.comments == true %}
-  {% include comments.html %}
-{% endif %}
-
-
-<div class="entry">
-<h2> Title </h2>
-<p> Writing <br></p>
-<small> Date </small><br><br></div>
-
--- Entry Template -->
+<form method="POST" action="https://https://yume-red.herokuapp.com/v2/entry/harkdand/yume.red/master/comments">
+  <input name="options[redirect]" type="hidden" value="https://koi.red">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label><input name="fields[name]" type="text">Name</label>
+  <label><input name="fields[email]" type="email">E-mail</label>
+  <label><textarea name="fields[message]"></textarea>Message</label>
+  
+  <button type="submit">Go!</button>
+</form>
