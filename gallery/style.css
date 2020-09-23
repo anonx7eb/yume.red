@@ -72,5 +72,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
+  cursor: url("leaf.cur");
   overflow-x: hidden;
 }
