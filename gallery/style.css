@@ -1,9 +1,9 @@
 body {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 flex-direction: column;
-	 font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
 }
 h1 {
   padding: 10px;
@@ -27,37 +27,35 @@ a:visited {
   color: white;
 }
  .grid-container {
-	 columns: 3 200px;
-	 column-gap: 50px;
-	 width: 80%;
-	 margin: 0 auto;
+  columns: 3 200px;
+  column-gap: 50px;
+  width: 80%;
+  margin: 0 auto;
 }
- .grid-container div {
-	 width: 150px;
-	 margin: 0 50px 50px 0;
-	 display: inline-block;
-         color:#E1EDBF;
-	 width: 100%;
-	 border: solid 2px E1EDBF;
-	 padding: 5px;
-         box-shadow: 0px 0px 8px #E1EDBFcc;
-  	 font-family:monospace;
-         background-color:#4B4F40aa;
-	 border-radius: 7px;
-
+.grid-container div {
+  width: 150px;
+  margin: 0 50px 50px 0;
+  display: inline-block;
+  color:#E1EDBF;
+  width: 100%;
+  border: solid 2px E1EDBF;
+  padding: 5px;
+  box-shadow: 0px 0px 8px #E1EDBFcc;
+  font-family:monospace;
+  background-color:#4B4F40aa;
+  border-radius: 7px;
 }
- .grid-container div:hover {
-	 border-color: #F2FFCE;
+.grid-container div:hover {
+  border-color: #F2FFCE;
 }
- .grid-container div img {
-	 width: 100%;
-	 border-radius: 7px;
+.grid-container div img {
+  width: 100%;
+  border-radius: 7px;
 }
- .grid-container div p {
-	 margin: 5px 0;
-	 padding: 0;
-	 text-align: center;
-
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
 }
 body {
   background-color: #E1EDBF;
