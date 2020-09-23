@@ -28,6 +28,7 @@ a:visited {
 }
 a {
   font-size:1.3em;
+  cursor: url("leaf.cur"), url("leaf.png"), default;
   font-weight: normal;
   font-family: monospace;
 }
