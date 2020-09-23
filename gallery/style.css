@@ -20,25 +20,19 @@ h1 {
 }
 a {
   background-color: #E1EDBFcc;
-  box-shadow: 0 3px 0 #798067cc;
   font-size:1.4em;
   font-weight: normal;
   font-family: monospace;
-  color: black;
-  padding: 5px 24px;
+  color: #E1EDBF;
   position: relative;
-  text-decoration: none;
-  border-radius: 2.5px;
-  margin-right: 20px;
 }
 a:hover {
   background-color: #ccffffbb;
   box-shadow: 0 3px 0 #99ccccbb;
-  color: black;
+  color: #E1EDBF;
 }
 a:active {
   box-shadow: none;
-  top: 3px;
 }
  .grid-container {
 	 columns: 3 200px;
