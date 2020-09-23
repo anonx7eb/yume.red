@@ -35,7 +35,7 @@ h1 {
          box-shadow: 0px 0px 8px #E1EDBFcc;
   	 font-family:monospace;
          background-color:#4B4F40aa;
-	 border-radius: 10px;
+	 border-radius: 7px;
 
 }
  .grid-container div:hover {
@@ -43,7 +43,7 @@ h1 {
 }
  .grid-container div img {
 	 width: 100%;
-	 border-radius: 10px;
+	 border-radius: 7px;
 }
  .grid-container div p {
 	 margin: 5px 0;
