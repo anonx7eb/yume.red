@@ -26,6 +26,14 @@ a:visited {
   text-decoration:none;
   color: #E1EDBF;
 }
+a {
+  font-size:1.3em;
+  font-weight: normal;
+  font-family: monospace;
+}
+a:hover {
+  text-shadow: 0px 0px 5px #E1EDBF;
+}
  .grid-container {
   columns: 3 200px;
   column-gap: 50px;
