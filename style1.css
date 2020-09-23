@@ -1404,6 +1404,7 @@ a {
   text-decoration: none;
   border-radius: 2.5px;
   margin-right: 20px;
+  cursor:url("leaf.cur"), auto;
 }
 a:hover {
   background-color: #ccffffbb;
@@ -1433,6 +1434,7 @@ body {
   background-size: cover;
   margin: 0;
   overflow-x: hidden;
+  cursor:url("leaf.cur"), auto;
 }
 ::-moz-selection {
   text-shadow: 0px;
