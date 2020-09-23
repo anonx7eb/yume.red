@@ -34,6 +34,12 @@ a:hover {
 a:active {
   box-shadow: none;
 }
+a:link {
+  color: #4B4F40;
+}
+a:visited {
+  color: #4B4F40;
+}
  .grid-container {
 	 columns: 3 200px;
 	 column-gap: 50px;
