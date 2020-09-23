@@ -20,11 +20,11 @@ h1 {
 }
 a:link {
   text-decoration:none;
-  color: white;
+  color: #E1EDBF;
 }
 a:visited {
   text-decoration:none;
-  color: white;
+  color: #E1EDBF;
 }
  .grid-container {
   columns: 3 200px;
